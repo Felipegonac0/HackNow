@@ -6,9 +6,9 @@ def names():
 	global nombre 
 	global apodo
 
-	nombre = raw_input("Cual es tu nombre completo? ")
+	nombre = input("Cual es tu nombre completo? ")
 	print ("")
-	apodo = raw_input("Como te gustaria que te llamara? ")
+	apodo = input("Como te gustaria que te llamara? ")
 	print ("")
 
 ########################################################################################################
@@ -23,7 +23,7 @@ def agrado():
 	
 	global agrado_i
 
-	agrado_r = raw_input("Escribe el inciso de tu opcion: ") 
+	agrado_r = input("Escribe el inciso de tu opcion: ") 
 	
 	if agrado_r.upper() == "A": 
 
@@ -48,7 +48,7 @@ def energia():
 Cuanta energia tienes en una escala del 1 al 10?
 		""")
 
-	energia_r = raw_input("Escribe el numero en la escala: ")
+	energia_r = input("Escribe el numero en la escala: ")
 	
 	global energia_i
 
@@ -112,7 +112,7 @@ def edad():
 
 	global edad 
 
-	edad_r = raw_input("Cual es tu edad? ")
+	edad_r = input("Cual es tu edad? ")
 
 	if edad_r.isdigit():
 
@@ -159,7 +159,7 @@ c) otro
 	
 	global genero
 
-	genero_r = raw_input("Escribe el inciso de tu opcion: ") 
+	genero_r = input("Escribe el inciso de tu opcion: ") 
 	
 	if genero_r.upper() == "A": 
 
@@ -187,10 +187,10 @@ Lo siento """ + apodo + " ,no entendi. Intenta con un inciso valido " + """
 sexo= "NONE"
 
 def sexo():
-    
-    global sexo
-    
-    print("""Con que sexo naciste?
+	
+	global sexo
+	
+	print("""Con que sexo naciste?
 
 a) Macho (XX)
 
@@ -198,28 +198,28 @@ b) Hembra (XY)
 
 c) Otro
 
-        """)
+		""")
 
-    sexo_r = raw_input("Escribe el inciso de tu opcion: ")
+	sexo_r = input("Escribe el inciso de tu opcion: ")
 
-    if sexo_r.upper() == 'A':
-        
-        sexo = "Macho"
+	if sexo_r.upper() == 'A':
+		
+		sexo = "Macho"
 
-    elif sexo_r.upper() == 'B':
-        
-        sexo = "Hembra"
+	elif sexo_r.upper() == 'B':
+		
+		sexo = "Hembra"
 
-    elif sexo_r.upper() == 'C':
-        
-        sexo = "Otro"
-    
-    else:
-        print("""
+	elif sexo_r.upper() == 'C':
+		
+		sexo = "Otro"
+	
+	else:
+		print("""
 Lo siento """ + apodo + " ,no entendi. Intenta con un inciso valido " + """
 """)
 
-        sexo()
+		sexo()
 
 ########################################################################################################
 
@@ -229,54 +229,56 @@ medicamentos = False
 lista_med = "No toma medicamentos"
 
 def medicamentos():
-    
-    global medicamentos
-    global lista_med
-    
-    print("""Estas tomando medicamentos?
+	
+	global medicamentos
+	global lista_med
+	
+	print("""Estas tomando medicamentos?
 a) Si
 b) No
 
 """)
 
-    medicamentos_r = raw_input("Escribe el inciso de tu opcion: ")
+	medicamentos_r = input("Escribe el inciso de tu opcion: ")
 
-    if medicamentos_r.upper() == 'A':
-        
-        print("De acuerdo ")
-        
-        medicamentos = True
-        
-        lista_med_r = raw_input("Puedes poner los nombres de los medicamentos que consumes en estos momentos: ")
-    	
-    	lista_med = lista_med_r
+	if medicamentos_r.upper() == 'A':
+		
+		print("De acuerdo ")
+		
+		medicamentos = True
+		
+		lista_med_r = input("Puedes poner los nombres de los medicamentos que consumes en estos momentos: ")
+		
+		lista_med = lista_med_r
 
-    elif medicamentos_r.upper()== 'B':
+	elif medicamentos_r.upper()== 'B':
 
-    	medicamentos = False
+		medicamentos = False
 
-    else:
-        print("""
+	else:
+		print("""
 Lo siento """ + apodo + " ,no entendi. Intenta con un inciso valido " + """
 """)
 
-        medicamentos()
+		medicamentos()
 
 ########################################################################################################
 
 #Psicologo
 
-terapia = False
+toma_terapia = "No aplica"
 tiempo_t = ""
-alta = False
+
 
 def psicologo():
-    
-    global terapia
-    global tiempo_t
-    global alta
-    
-    print("""Alguna vez has asistido al psicologo? 
+	
+	terapia = False
+	alta = False
+
+	global toma_terapia
+	global tiempo_t
+	
+	print("""Alguna vez has asistido al psicologo? 
 (Recuerda que no tiene nada de malo pedir ayuda, todos la necesitamos en algun momento)
 
 a) Asisto actualmente
@@ -285,70 +287,99 @@ c) Nunca he asistido
 
 """)
 
-    terapia_r = raw_input("Escribe el inciso de tu opcion: ")
+	terapia_r = input("Escribe el inciso de tu opcion: ")
 
-    if terapia_r.upper() == 'A':
-        
-        print("Me podrias decir durante cuantas semanas has estado asistiendo? ")
-        
-        terapia = True
-        alta = False
-        
-        tiempo_t_r = raw_input("Coloca el numero de semanas: ")
-    	
-    	if tiempo_t_r.isdigit():
+	if terapia_r.upper() == 'A':
+		
+		print("Me podrias decir durante cuantas semanas has estado asistiendo? ")
+		
+		terapia = True
+		alta = False
+		
+		tiempo_t_r = input("Coloca el numero de semanas: ")
+		
+		if tiempo_t_r.isdigit():
 
-    		if int(tiempo_t_r) >= 1:
+			if int(tiempo_t_r) >= 1:
 
-    			tiempo_t = tiempo_t_r
+				tiempo_t = tiempo_t_r
 
-    		else:
+			else:
 
-    			print(apodo + """,
+				print(apodo + """,
 ingresa un numero positivo o mayor a 0, por favor """)
-    			psicologo()	
-    	else:
+				psicologo()	
+		else:
 
-    		print (apodo + """, 
+			print (apodo + """, 
 ingresa un numero valido""")
 
-    elif terapia_r.upper() == 'B':
+	elif terapia_r.upper() == 'B':
 
-        
-        print("Me podrias decir durante cuantas semanas asististe? ")
-        
-        terapia = True
-        alta = True
-        
-        tiempo_t_r = raw_input("Coloca el numero de semanas: ")
-    	
-    	if tiempo_t_r.isdigit():
+		
+		print("Me podrias decir durante cuantas semanas asististe? ")
+		
+		terapia = True
+		alta = True
+		
+		tiempo_t_r = input("Coloca el numero de semanas: ")
+		
+		if tiempo_t_r.isdigit():
 
-    		if int(tiempo_t_r) >= 1:
+			if int(tiempo_t_r) >= 1:
 
-    			tiempo_t = tiempo_t_r
+				tiempo_t = tiempo_t_r
 
-    		else:
+			else:
 
-    			print(apodo + """,
+				print(apodo + """,
 ingresa un numero positivo o mayor a 0, por favor """)
-    			psicologo()
+				psicologo()
 
-    	else:
+		else:
 
 			print(apodo + """,
 ingresa un numero valido, por favor """)
-    			psicologo()
+			psicologo()
 
-    elif terapia_r.upper()== 'C':
+	elif terapia_r.upper()== 'C':
 
-    	terapia = False
-    	alta = False
+		terapia = False
+		alta = False
 
-    else:
-        print("""
+	else:
+		print("""
 Lo siento """ + apodo + " ,no entendi. Intenta con un inciso valido " + """
 """)
-        psicologo()
+		psicologo()
+
+
+
+	if terapia == True and alta == True:
+
+		toma_terapia = "Asistio" 
+
+	elif terapia == True and alta == False:
+
+		toma_terapia = "Asiste"
+
+	else:
+
+		toma_terapia = "No ha tomado terapia"
 
 ########################################################################################################
+
+texto = "NONE"
+
+def texto_abierto():
+
+	global texto
+
+	print ("""Ahora """ + apodo + """, puedes describirme en al menos un parrafo como te has sentido en los ultimos 3 dias?""")
+
+	texto_r = input("""Escribelo aqui tu respuesta """ + apodo + """: """)
+
+	texto = texto_r
+
+
+
