@@ -1,6 +1,10 @@
 import function
 import test 
 
+from flashtext import KeywordProcessor
+
+keyword_processor = KeywordProcessor()
+
 print ("""Hola, soy Dulas
 Estoy aqui para saber como te sientes""")
 print ("")
@@ -33,9 +37,13 @@ function.psicologo()
 print("Listo " + function.apodo +". Ahora voy a hacerte algunas preguntas para poder tener un mejor diagnostico ")
 
 test.test()
-"""
 
+"""
 function.texto_abierto()
+
+keyword_processor.add_keywords_from_dict(function.keyword_dict)
+
+keywords = keyword_processor.extract_keywords(function.texto)
 
 """
 print("Nombre completo: " + function.nombre)
@@ -55,6 +63,7 @@ print("Depresion: " + str(test.depresion))
 print("Positivo: " + str(test.positivo))
 print("Estres: " + str(test.estres))
 """
-print(str(function.texto))
+#print(str(function.texto))
+print(keywords)
 
 

@@ -379,7 +379,13 @@ def texto_abierto():
 
 	texto_r = input("""Escribelo aqui tu respuesta """ + apodo + """: """)
 
-	texto = texto_r
+	texto = texto_r.lower()
 
+keyword_dict = {
+	
+	"Triste": ["tristeza", "decaido", "sin ganas"],
+	"Feliz" : ["positivo", "relajado", "contento"],
+	"Enojo": ["ira", "rabia",]
 
+}
 
