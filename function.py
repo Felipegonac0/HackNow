@@ -6,9 +6,9 @@ def names():
 	global nombre 
 	global apodo
 
-	nombre = input("Cual es tu nombre completo? ")
+	nombre = input("¿Cuál es tu nombre completo? ")
 	print ("")
-	apodo = input("Como te gustaria que te llamara? ")
+	apodo = input("¿Cómo te gustaría que te llamara? ")
 	print ("")
 
 ########################################################################################################
@@ -23,7 +23,7 @@ def agrado():
 	
 	global agrado_i
 
-	agrado_r = input("Escribe el inciso de tu opcion: ") 
+	agrado_r = input("Escribe el inciso de tu opción: ") 
 	
 	if agrado_r.upper() == "A": 
 
@@ -36,7 +36,7 @@ def agrado():
 	else:
 
 		print("""
-Lo siento """ + apodo + " ,no entendi. Intenta con un inciso valido " + """
+Lo siento """ + apodo + " ,no entendí. Intenta con un inciso válido " + """
 """)
 		agrado()
 
@@ -45,10 +45,12 @@ Lo siento """ + apodo + " ,no entendi. Intenta con un inciso valido " + """
 def energia():
 
 	print (""" 
-Cuanta energia tienes en una escala del 1 al 10?
+
+¿Cuánta energía tienes en una escala del 1 al 10?
+
 		""")
 
-	energia_r = input("Escribe el numero en la escala: ")
+	energia_r = input("Escribe el número en la escala: ")
 	
 	global energia_i
 
@@ -65,14 +67,14 @@ Cuanta energia tienes en una escala del 1 al 10?
 		elif int(energia_r) < 1 or int(energia_r) > 10: 
 
 			print("""
-Lo siento """ + apodo + " ,no entendi. Intenta con un numero dentro de la escala " + """
+Lo siento """ + apodo + " ,no entendí. Intenta con un número dentro de la escala " + """
 """)
 			energia()
 
 	else:
 
 		print("""
-Lo siento """ + apodo + " ,no entendi. Intenta insertar un numero " + """
+Lo siento """ + apodo + " ,no entendí. Intenta insertar un número " + """
 """)
 		energia() 
 
@@ -112,7 +114,11 @@ def edad():
 
 	global edad 
 
-	edad_r = input("Cual es tu edad? ")
+	edad_r = input("""
+
+¿Cuál es tu edad? 
+
+Edad: """)
 
 	if edad_r.isdigit():
 
@@ -122,7 +128,7 @@ def edad():
 	
 		if int(edad_r) < 18: 
 
-			print(apodo + ", pide ayuda a tu tutor legal para poder continuar con tu diagnostico")
+			print(apodo + ", pide ayuda a tu tutor legal para poder continuar con tu diagnóstico")
 
 			exit()
 
@@ -134,7 +140,7 @@ En caso de que colocaste mal tu edad intentalo de nuevo""")
 
 	else: 
 		print("""
-Lo siento """ + apodo + " ,no entendi. Intenta insertar un numero " + """
+Lo siento """ + apodo + " ,no entendí. Intenta insertar un número " + """
 """)
 		edad()
 
@@ -147,7 +153,9 @@ genero = ""
 
 def genero_f():
 
-	print (apodo + """, con que genero te identificas?
+	print ("""
+
+""" + apodo + """, ¿Con qué género te identificas?
 
 a) Mujer 
 
@@ -159,7 +167,7 @@ c) otro
 	
 	global genero
 
-	genero_r = input("Escribe el inciso de tu opcion: ") 
+	genero_r = input("Escribe el inciso de tu opción: ") 
 	
 	if genero_r.upper() == "A": 
 
@@ -176,7 +184,7 @@ c) otro
 	else:
 
 		print("""
-Lo siento """ + apodo + " ,no entendi. Intenta con un inciso valido " + """
+Lo siento """ + apodo + " ,no entendí. Intenta con un inciso válido " + """
 """)
 		genero_f()	
 
@@ -190,7 +198,9 @@ def sexo():
 	
 	global sexo
 	
-	print("""Con que sexo naciste?
+	print("""
+
+¿Con que sexo naciste?
 
 a) Macho (XX)
 
@@ -200,7 +210,7 @@ c) Otro
 
 		""")
 
-	sexo_r = input("Escribe el inciso de tu opcion: ")
+	sexo_r = input("Escribe el inciso de tu opción: ")
 
 	if sexo_r.upper() == 'A':
 		
@@ -216,7 +226,7 @@ c) Otro
 	
 	else:
 		print("""
-Lo siento """ + apodo + " ,no entendi. Intenta con un inciso valido " + """
+Lo siento """ + apodo + " ,no entendí. Intenta con un inciso válido " + """
 """)
 
 		sexo()
@@ -233,17 +243,24 @@ def medicamentos():
 	global medicamentos
 	global lista_med
 	
-	print("""Estas tomando medicamentos?
+	print("""
+
+¿Estás tomando medicamentos?
+
 a) Si
 b) No
 
 """)
 
-	medicamentos_r = input("Escribe el inciso de tu opcion: ")
+	medicamentos_r = input("Escribe el inciso de tu opción: ")
 
 	if medicamentos_r.upper() == 'A':
 		
-		print("De acuerdo ")
+		print("""
+
+De acuerdo 
+
+""")
 		
 		medicamentos = True
 		
@@ -257,7 +274,7 @@ b) No
 
 	else:
 		print("""
-Lo siento """ + apodo + " ,no entendi. Intenta con un inciso valido " + """
+Lo siento """ + apodo + " ,no entendí. Intenta con un inciso válido " + """
 """)
 
 		medicamentos()
@@ -278,25 +295,32 @@ def psicologo():
 	global toma_terapia
 	global tiempo_t
 	
-	print("""Alguna vez has asistido al psicologo? 
+	print("""
+
+¿Alguna vez has asistido al psicólogo? 
+
 (Recuerda que no tiene nada de malo pedir ayuda, todos la necesitamos en algun momento)
 
 a) Asisto actualmente
-b) Asisti
+b) Asistí
 c) Nunca he asistido
 
 """)
 
-	terapia_r = input("Escribe el inciso de tu opcion: ")
+	terapia_r = input("Escribe el inciso de tu opción: ")
 
 	if terapia_r.upper() == 'A':
 		
-		print("Me podrias decir durante cuantas semanas has estado asistiendo? ")
+		print("""
+
+¿Me podrias decir durante cuantas semanas has estado asistiendo? 
+
+""")
 		
 		terapia = True
 		alta = False
 		
-		tiempo_t_r = input("Coloca el numero de semanas: ")
+		tiempo_t_r = input("Coloca el número de semanas: ")
 		
 		if tiempo_t_r.isdigit():
 
@@ -307,22 +331,26 @@ c) Nunca he asistido
 			else:
 
 				print(apodo + """,
-ingresa un numero positivo o mayor a 0, por favor """)
+ingresa un número positivo o mayor a 0, por favor """)
 				psicologo()	
 		else:
 
 			print (apodo + """, 
-ingresa un numero valido""")
+ingresa un número válido""")
 
 	elif terapia_r.upper() == 'B':
 
 		
-		print("Me podrias decir durante cuantas semanas asististe? ")
+		print("""
+
+Me podrias decir durante cuantas semanas asististe? 
+
+""")
 		
 		terapia = True
 		alta = True
 		
-		tiempo_t_r = input("Coloca el numero de semanas: ")
+		tiempo_t_r = input("Coloca el número de semanas: ")
 		
 		if tiempo_t_r.isdigit():
 
@@ -333,13 +361,13 @@ ingresa un numero valido""")
 			else:
 
 				print(apodo + """,
-ingresa un numero positivo o mayor a 0, por favor """)
+ingresa un número positivo o mayor a 0, por favor """)
 				psicologo()
 
 		else:
 
 			print(apodo + """,
-ingresa un numero valido, por favor """)
+ingresa un número válido, por favor """)
 			psicologo()
 
 	elif terapia_r.upper()== 'C':
@@ -349,7 +377,7 @@ ingresa un numero valido, por favor """)
 
 	else:
 		print("""
-Lo siento """ + apodo + " ,no entendi. Intenta con un inciso valido " + """
+Lo siento """ + apodo + " ,no entendí. Intenta con un inciso válido " + """
 """)
 		psicologo()
 
@@ -375,17 +403,31 @@ def texto_abierto():
 
 	global texto
 
-	print ("""Ahora """ + apodo + """, puedes describirme en al menos un parrafo como te has sentido en los ultimos 3 dias?""")
+	print ("""
+
+Ahora """ + apodo + """, puedes describirme en al menos un párrafo como te has sentido en los últimos 3 días?
+
+""")
 
 	texto_r = input("""Escribelo aqui tu respuesta """ + apodo + """: """)
 
 	texto = texto_r.lower()
 
 keyword_dict = {
-	
-	"Triste": ["tristeza", "decaido", "sin ganas"],
-	"Feliz" : ["positivo", "relajado", "contento"],
-	"Enojo": ["ira", "rabia",]
+
+"Agobio": ["agobio", "agobiado", "agobiada", "agobiadisimo", "agobiadisima"],
+"Agotamiento": ["agotamiento ", "agotado", "agotada", "cansado", "cansada", "cansancio", "agotadisimo", "agotadisima"],
+"Triste": [" triste", "tristeza", "tristemente", "infeliz", "desesperado", "desesperada", "desesperación"],
+"Feliz": ["feliz", "felizmente", "alegre", "alegremente", "contento", "contenta", "eufórico", "positivo", "perfección", "perfecto", "perfecta", "positivo", "positivamente", "positivismo", "positiva", "bien", "positivisima"],
+"Depresion": ["depresion", "depresivo", "depresiva", "deprimido", "deprimida", "depresiva"],
+"Estres": ["estres", "estresada", "estresada"],
+"Enojo" : ["enojo", "ira", "rabia", "furia", "odio", "odias", "odiamos", "odian"],
+"Ansiedad" : ["ansiedad", "ansioso", "ansiosa"],
+"Negativo": ["negativo", "negativamente", "negativismo", "mal"],
+"Sentir": ["sentir", "sentimientos", "sentimiento", "siento", "emoción", "emocional", "emocionalmente", "inestabilidad", "inestable"],
+"Muerte": ["muerte", "murio", "murieron", "morire", "suicidio", "suicidarse", "suicidarme", "matarme"] ,
+"Venganza": ["venganza", "vengativo", "vengativa", "rencor", "rencoroso", "rencorosa", "revancha"],
+"Bully": ["bully", "bullying", "molestar", "molesto", "molesta"],
 
 }
 

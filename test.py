@@ -8,7 +8,7 @@ estres = 0
 def validador():
 
 	print("""
-Lo siento """ + function.apodo + " ,no entendi. Intenta con un inciso valido " + """
+Lo siento """ + function.apodo + " ,no entendí. Intenta con un inciso valido " + """
 """)
 
 def test():
@@ -42,10 +42,10 @@ def Q_1():
 	global estres
 
 	print("""
-1) Realizas un trabajo en equipo, pero no sale como lo esperabas, que sucede?
+1) Realizas un trabajo en equipo, pero no sale como lo esperabas,¿Qué sucede?
 
 
-A) Me enojo porque yo queria algo mas 
+A) Me enojo porque yo quería algo más 
 
 B) Siento que fue por mi culpa y me desaliento 
 
@@ -53,7 +53,7 @@ C) Busco saber en que me equivoque y mejoro
 
 """) 
 	
-	q_1 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_1 = input("Escribe el inciso de tu opcion: ") 
 	
 	if q_1.upper() == "A": 
 
@@ -81,9 +81,9 @@ def Q_2():
 	global estres
 
 	print("""
-2) Vas a exponer en frente a una multitud, que sucede?
+2) Vas a exponer en frente a una multitud,¿Qué sucede?
 
-A) Me tranquilizo porque se que estoy preparado 
+A) Me tranquilizo porque sé que estoy preparado 
 
 B) Voy, pero siento que no lo voy hacer bien
 
@@ -92,7 +92,7 @@ C) Siento como si se me acabase el aire
 
 """) 
 	
-	q_2 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_2 = input("Escribe el inciso de tu opción: ") 
 	
 	if q_2.upper() == "A": 
 
@@ -121,7 +121,7 @@ def Q_3():
 
 	print("""
 
-3) Como soy cuando conozco a gente nueva?
+3)¿Cómo soy cuando conozco a gente nueva?
 
 A) Me pongo a pensar en si me van a ver raro 
 
@@ -131,7 +131,7 @@ C) Quisiera acercarme a ellos, pero siento que no soy suficiente
 
 """) 
 	
-	q_3 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_3 = input("Escribe el inciso de tu opción: ") 
 	
 	if q_3.upper() == "A": 
 
@@ -160,18 +160,18 @@ def Q_4():
 
 	print("""
 
-4) Estas discutiendo con un amigo y te dice que si no les das la razon deja de ser tu amigo, que hace?
+4) Estas discutiendo con un amigo y te dice que si no les das la razón deja de ser tu amigo,¿Qué haces?
 
-A) Le doy la razon, no quiero que me odie 
+A) Le doy la razón, no quiero que me odie 
 
 B) Me entristezco y pienso que no merezco a nadie
 
-C) Me alejo de el, se que hay mejores personas con las que estar 
+C) Me alejo de él, se que hay mejores personas con las que estar 
 
 
 """) 
 	
-	q_4 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_4 = input("Escribe el inciso de tu opción: ") 
 	
 	if q_4.upper() == "A": 
 
@@ -200,17 +200,17 @@ def Q_5():
 
 	print("""
 
-5) Hay un rumor de que le gustas a tu crush, que piensas?
+5) Hay un rumor de que le gustas a tu crush,¿Qué piensas?
 
 A) Me quedo en shock, no puedo pensar y me preocupo
 
 B) Me emociono y pienso en que tengo una oportunidad 
 
-C) Me pongo a pensar de que tal vez sea falso o me intentan enganar
+C) Me pongo a pensar de que tal vez sea falso o me intentan engañar
 
 """) 
 	
-	q_5 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_5 = input("Escribe el inciso de tu opción: ") 
 	
 	if q_5.upper() == "A": 
 
@@ -239,7 +239,7 @@ def Q_6():
 
 	print("""
 
-6) A lo largo de este mes, Que tan bien descansado te sientes?
+6) A lo largo de este mes,¿Qué tan descansado te sientes?
 
 A) He dormido bien, pero aun asi me siento cansado 
 
@@ -250,7 +250,7 @@ C) He dormido bien y me siento descansado
 
 """) 
 	
-	q_6 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_6 = input("Escribe el inciso de tu opción: ") 
 	
 	if q_6.upper() == "A": 
 
@@ -279,9 +279,9 @@ def Q_7():
 
 	print("""
 
-7) A lo largo de la semana te has dado un tiempo para descansar?
+7) En la semana, ¿Te has dado un tiempo para descansar?
 
-A) Si, eso me ayuda a liberarme y concentrarme 
+A) Sí, eso me ayuda a liberarme y concentrarme 
 
 B) No, tengo muchas cosas que hacer y quiero acabarlo ya
 
@@ -289,7 +289,7 @@ C) No, porque se me acumula el trabajo y me agobio
 
 """) 
 	
-	q_7 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_7 = input("Escribe el inciso de tu opción: ") 
 	
 	if q_7.upper() == "A": 
 
@@ -317,7 +317,7 @@ def Q_8():
 
 	print("""
 
-8) Actualmente sientes que lo que haces no es suficiente?
+8) Actualmente, ¿Sientes que lo que haces no es suficiente?
 
 A) Siento que lo que hago no es suficiente
 
@@ -327,7 +327,7 @@ C) Siento que soy importante
 
 """) 
 	
-	q_8 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_8 = input("Escribe el inciso de tu opción: ") 
 	
 	if q_8.upper() == "A": 
 
@@ -355,17 +355,17 @@ def Q_9():
 
 	print("""
 
-9)  Has sentido que no te puedes concentrarte ultimamente?
+9) ¿Has sentido que no te puedes concentrarte ultimamente?
 
 A) No, me siento muy enfocado
 
-B) Si, solo me he podido centrar en un tema y me bloqueo 
+B) Sí, solo me he podído centrar en un tema y me bloqueo 
 
-C) Si, pero porque no siento que pueda hacerlo 
+C) Sí, pero porque no siento que pueda hacerlo 
 
 """) 
 	
-	q_9 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_9 = input("Escribe el inciso de tu opcion: ") 
 	
 	if q_9.upper() == "A": 
 
@@ -394,17 +394,17 @@ def Q_10():
 
 	print("""
 
-10) Has sentido momentos de preocupacion irracional?
+10) ¿Has sentido momentos de preocupación irracional?
 
-A) Si, pero despues de un tiempo se me pasa
+A) Sí, pero despues de un tiempo se me pasa
 
-B) No, solo me preocupo de vez en cuando pero lo suficiente
+B) No, sólo me preocupo de vez en cuando pero lo suficiente
 
-C) Si, y siento como si aquella sensacion no acabase y estuviese en un bucle 
+C) Sí, y siento como si aquella sensación no acabase y estuviese en un bucle 
 
 """) 
 	
-	q_10 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_10 = input("Escribe el inciso de tu opción: ") 
 	
 	if q_10.upper() == "A": 
 
@@ -433,17 +433,17 @@ def Q_11():
 
 	print("""
 
-11) He sentido una necesidad irracional de hacer mas cosas?
+11)¿He sentido una necesidad irracional de hacer más cosas?
 
 A) No he sentido esa necesidad 
 
-B) Siento que deberia de hacer mas pero no tengo la energia suficiente 
+B) Siento que debería de hacer más pero no tengo la energía suficiente 
 
-C) Si, pero no se el que y me preocupa
+C) Sí, pero no se el que y me preocupa
 
 """) 
 	
-	q_11 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_11 = input("Escribe el inciso de tu opción: ") 
 	
 	if q_11.upper() == "A": 
 
@@ -478,11 +478,11 @@ A) Presente y todo lo que hay que hacer ya
 
 B) Futuro y lo que va suceder dependiendo por cada pequena cosa que haga
 
-C) Pienso lo necesario acerca de mi futuro y presente
+C) Pienso lo necesario acerca de mí futúro y presente
 
 """) 
 	
-	q_12 = raw_input("Escribe el inciso de tu opcion: ") 
+	q_12 = input("Escribe el inciso de tu opción: ") 
 	
 	if q_12.upper() == "A": 
 

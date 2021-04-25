@@ -1,0 +1,66 @@
+
+A quien corresponda, 
+
+Por medio de la presente DulasApp hace llegar un diagnostico psicologico general del paciente Felipe de Jesús. 
+
+INFORMACIÓN GENERAL:
+
+Nombre: Felipe de Jesús. 
+
+Edad: 19.
+
+Género: Mujer.
+
+Sexo: Hembra.
+
+
+MEDICAMENTOS: 
+
+Consume medicamentos actualmente: True.
+
+Lista de medicamentos que consume: Paracetamol.
+
+
+EMOCIONAL:
+
+Cuadrante emocional (RULER): Cuadrante amarillo.
+
+Terapia: Asiste.
+
+Tiempo en terapia (Semanas): 18.
+
+
+RESULTADOS ARROJADOS POR EL TEST: 
+
+Ansiedad: 4
+
+Depresión: 1
+
+Positivo: 4
+
+Estrés: 3
+
+Recomendaciones dadas por Dulas: 
+
+
+
+Te recomiendo que hagas ejercicio durante 30 minutos al día, esto de 3 a 5 días por semana, 
+haz ejercicios que te mantengan activo y feliz, como por ejemplo correr o trotar.Me gustaría recomendarte una dieta en la que puedas comer carbohidratos complejos como la avena,
+quinoa, panes y cereales integrales, de igual manera podrias adaptar algunos hábitos como pueden ser el mantenerse bien hidratado y agregar proteína a tu desayuno, 
+de igual manera deberías evitar o al menos disminuir el consumo de alcohol y cafeína 
+
+Te encuentras bien, pero recuerda que puedes estar aún mejor,
+realiza cualquier tipo de actividad física que te llame la atención, como bailar, 
+correr o practicar algún deporte. Hola solo te quiero decir que vas bien, 
+simplemente recuerda que una buena alimentación es de lo mejor para tu cuerpo mente, 
+come frutas y verduras y si quieres de vez en cuando algún que otro gustito. 
+
+Me gustaría recomendarte ejercicios que involucren que estés en movimiento constante, como por ejemplo trotar, 
+pero también puedes hacer alguna actividad física que te guste como bailar, practicar algún deporte, etc. Me gustaría recomendarte una dieta en que puedas comer alimento ricos en magnesio, 
+tales como el chocolate, las legumbre y lentejas, de igual podrías comer tubérculos como la yuca, la papa y la calabaza y unos alimentos que te ayudaran mucho serán los arándanos y uvas,
+pero eso sí, evita el exceso de azúcares y sales, así como los alimentos de comida rápida.
+
+
+PALABRAS CLAVE ENCONTRADAS EN EL TEXTO ESCRITO: 
+
+['Feliz']
